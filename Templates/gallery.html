@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery page</title>
+
+    <style>
+        img{display: inline-flex;
+            width: 200px;
+            height: 250px;
+            border-radius: 50px;
+
+
+        }
+
+        h1{
+            background-color: black;
+            color: #81d4fa;
+            line-height: 100px;
+            text-align: center;
+        }
+
+    </style>
+    
+    {% load static %}
+
+    <link rel="icon" href="{% static 'assets/images.png' %}">
+    
+</head>
+<body>
+
+<a href="{% url 'home' %}">Home</a>
+<a href="{% url 'about' %}">About</a>
+
+
+<h1>Products offered at CartDish</h1>
+<img src="{% static 'assets/img.png' %}" alt="">
+<img src="{% static 'assets/img_1.png' %}" alt="">
+<img src="{% static 'assets/img_2.png' %}" alt="">
+<img src="{% static 'assets/img_3.png' %}" alt="">
+<img src="{% static 'assets/img_4.png' %}" alt="">
+<img src="{% static 'assets/img_5.png' %}" alt="">
+
+
+
+
+</body>
+</html>

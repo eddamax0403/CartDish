@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+
+    <style>
+        h1{
+            text-align: center;
+            color: #debb87;
+            text-shadow: 5px 5px 10px darkblue;
+        }
+    </style>
+
+    {% load static %}
+
+    <link rel="icon" href="{% static 'assets/home.png' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+
+</head>
+<body>
+
+<a href="{% url 'gallery' %}">Gallery</a>
+
+<a href="{% url 'about' %}">About</a>
+
+<marquee behavior="scroll" direction="right"><h1>CartDish</h1></marquee>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda debitis deserunt earum eius inventore ipsam iusto magnam maiores nesciunt perferendis praesentium, quam quas qui quibusdam, repellendus reprehenderit ullam vitae?</span><span>Consequuntur cum debitis deserunt, doloribus earum et harum minus nesciunt odit optio pariatur quia reprehenderit, saepe sit ut vel veniam. Consequatur illo officia, quia quos reiciendis sed tempore. Excepturi, nisi!</span></p>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquid autem consectetur deleniti dicta dolorem eveniet exercitationem facilis incidunt ipsam itaque iure nam odit officiis sint suscipit velit. Inventore, vel?</span><span>A accusantium debitis ducimus ea, esse est eveniet exercitationem obcaecati odio porro praesentium quam quo sapiente tenetur ullam. Dicta dolorem fugiat hic ipsam magnam modi, numquam porro provident quas voluptate.</span><span>Accusantium aut, blanditiis cupiditate dignissimos, distinctio dolore ducimus expedita explicabo facere fugiat inventore ipsam laboriosam maxime natus odio praesentium quae reiciendis rem rerum similique totam veniam veritatis voluptatibus. Eius, labore!</span></p>
+
+
+
+
+
+
+</body>
+</html>
