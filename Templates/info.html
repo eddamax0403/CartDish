@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    
+
+</head>
+<body>
+
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'form' %}">Form</a>
+<a href="{% url 'info' %}">Info</a>
+<a href="{% url 'home' %}">Home</a>
+
+
+<h1 class="text-center text-warning">Product Details</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eum nobis quam voluptatem. Consectetur eius error numquam repudiandae saepe! Adipisci explicabo fugit necessitatibus quam quas vel vero! Illum tempore, ullam!</span><span>Adipisci aliquid aspernatur blanditiis cumque deserunt dignissimos ea enim error, expedita explicabo facilis fugiat fugit, in ipsa magni mollitia omnis placeat porro sed vel velit voluptas voluptate. A, consequuntur placeat.</span></p>
+
+<table class="table table-bordered table-hover container">
+
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Quality</th>
+        <th>Product Quantity</th>
+    </tr>
+
+    <tr class="table-info">
+    <td>1</td>
+    <td>Wheat</td>
+    <td>Good</td>
+    <td>200 Bags</td>
+    </tr>
+
+    <tr class="table-danger">
+    <td>2</td>
+    <td>Rice</td>
+    <td>Good</td>
+    <td>250 Bags</td>
+    </tr>
+
+    <tr class="table-warning">
+    <td>3</td>
+    <td>Sugar</td>
+    <td>Good</td>
+    <td>200 Bags</td>
+    </tr>
+
+    <tr>
+    <td>3</td>
+    <td>Sugar</td>
+    <td>Good</td>
+    <td>200 Bags</td>
+    </tr>
+
+    <tr class="table-success">
+    <td>3</td>
+    <td>Sugar</td>
+    <td>Good</td>
+    <td>200 Bags</td>
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+</body>
+</html>

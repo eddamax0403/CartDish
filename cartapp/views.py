@@ -10,3 +10,9 @@ def gallery(request):
 
 def about(request):
     return render(request,'about.html')
+
+def form(request):
+    return render(request,'form.html')
+
+def info(request):
+    return render(request,'info.html')

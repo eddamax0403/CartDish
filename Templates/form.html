@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+
+
+</head>
+<body>
+
+<a href="{% url 'home' %}">Home</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'info' %}">Info</a>
+
+
+
+<form action="">
+
+    <br><br>
+    <legend>Registration Form</legend>
+    <br>
+
+    <label for="fn">First Name:</label> <br>
+    <input type="text" id="fn" required="required">
+    <br><br>
+
+    <label for="ln">Last Name:</label> <br>
+    <input type="text" id="ln" required="required">
+    <br><br>
+
+    <label for="email">Email:</label> <br>
+    <input type="text" id="email" required="required">
+    <br><br>
+
+    <label for="pwd">Password:</label> <br>
+    <input type="password" id="pwd" required="required">
+    <br><br>
+
+    <label for="pwd1">Re-type Password:</label> <br>
+    <input type="password" id="pwd1" required="required">
+    <br><br>
+
+    <label for="tel">Contact:</label> <br>
+    <input type="tel" id="tel" required="required">
+    <br><br>
+
+
+    <label for="sex">Gender:</label> <br>
+    <select name="" id="sex" required="required">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="n/a">N/A</option>
+    </select>
+    <br><br>
+
+    <button>Submit</button>
+    <br><br>
+
+</form>
+
+
+
+
+
+
+</body>
+</html>
